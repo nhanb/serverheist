@@ -34,3 +34,15 @@ How the hell am I supposed to submit my code? vi/vim/nano/emacs didn't work.
 
 Update 1: Ah shit `ps -aux` didn't work but `ps aux` did. Should have tried
 tabbing in the first place!
+
+# Done... or am I?
+
+So after fixing the python script & killing the malware process, they let me
+`sudo restart` the machine.
+
+But then I still have no idea what this clue's about:
+
+> When the firewall is all set up, dial this number to know what to do next:
+> 777337777827778
+
+Weird.

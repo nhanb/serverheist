@@ -1,5 +1,4 @@
 import sys
-from functools import lru_cache
 
 
 # https://stackoverflow.com/questions/3939660/sieve-of-eratosthenes-finding-primes-python
@@ -14,19 +13,10 @@ def primes_sieve(limit):
                 a[n] = False
 
 
-# https://stackoverflow.com/questions/4114167/checking-if-a-number-is-prime-in-python
-@lru_cache(maxsize=None)
-def is_prime(n):
-    result = n > 1 and all(n % i for i in range(2, int(n ** 0.5) + 1))
-    # print(f'{n} is{"" if result else " NOT"} prime')
-    return result
-
-
-@lru_cache(maxsize=None)
-def is_super_prime(num: int) -> bool:
+def is_super_prime(num: int, is_prime_func) -> bool:
     remainder = num
     while True:
-        if not is_prime(remainder):
+        if not is_prime_func(remainder):
             return False
         remainder = num // 10
         if remainder == 0:
@@ -36,7 +26,15 @@ def is_super_prime(num: int) -> bool:
 
 
 def findSuperPrime(n):
-    return [prime for prime in range(n + 1) if is_super_prime(prime)]
+    if n <= 2:
+        return []
+
+    primes = set(primes_sieve(n))
+
+    def is_prime2(num):
+        return num in primes
+
+    return sorted(prime for prime in primes if is_super_prime(prime, is_prime2))
 
 
 if __name__ == "__main__":
