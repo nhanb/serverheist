@@ -7,7 +7,7 @@ Someday.
 # Challenge 1: `login`
 
 Unlike AoC which starts off with several trivial warm-up exercises, SH hits you
-away with a meaty puzzle already. I don't mind that, but the ergonormics in SH
+with a meaty puzzle already. I don't mind that, but the ergonormics in SH
 leave a lot to be desired:
 
 - It doesn't seem to remember my progress, so when I came back to the site this
@@ -18,8 +18,9 @@ leave a lot to be desired:
   time, and the site hijacks both ctrl+c and right click, so I had to copy the
   xhr response from the network inspector instead. Maybe it's intentional so I
   realize the repeated failing requests to some `serverheist-hacker.tk` server.
-  Or maybe automating the tedious steps is part of the challenge as well. Idk,
-  it starts to feel a bit too much like actual work for me.
+  Or maybe automating the tedious steps is part of the challenge as well. ~~Idk,
+  it starts to feel a bit too much like actual work for me.~~ Well I'll be
+  damned, it actually is a hint to help me find the malware process.
 
 # Challenge 2: thecoup
 
@@ -46,3 +47,10 @@ But then I still have no idea what this clue's about:
 > 777337777827778
 
 Weird.
+
+# In conclusion
+
+Kinda rough around the edges but I liked it.
+
+But then unlike AoC, this is python-centric and not very useful for language
+learning practice. (but hey they never said it was)
