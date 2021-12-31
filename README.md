@@ -31,3 +31,6 @@ Fine.
 serverheist-hacker.tk requests.
 
 How the hell am I supposed to submit my code? vi/vim/nano/emacs didn't work.
+
+Update 1: Ah shit `ps -aux` didn't work but `ps aux` did. Should have tried
+tabbing in the first place!
