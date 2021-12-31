@@ -20,3 +20,14 @@ leave a lot to be desired:
   realize the repeated failing requests to some `serverheist-hacker.tk` server.
   Or maybe automating the tedious steps is part of the challenge as well. Idk,
   it starts to feel a bit too much like actual work for me.
+
+# Challenge 2: thecoup
+
+Fine.
+
+# Challenge 3: blackhat
+
+`ps` didn't show anything that seems to be related to the repeated
+serverheist-hacker.tk requests.
+
+How the hell am I supposed to submit my code? vi/vim/nano/emacs didn't work.
